@@ -68,7 +68,7 @@ function validatePaymentForm()
 		}
 		
 		// convert to decimal Number
-		$("#amount").val(parseInt(tmpAmount).toFixed(3));
+		$("#amount").val(parseInt(tmpAmount).toFixed(0));
 		
 		// is numerical value
 		var crdLengh = $("#creditCardNumber").val().length;
@@ -85,7 +85,7 @@ function validatePaymentForm()
 		$("#creditCardNumber").val(parseInt(tmpCardNum).toFixed(0));
 		
 		//date
-		var regYear = /^2017|2018|2019|2020|2021|2022|2023|2024|2025|2026|2027|2028|2029|2030|2031$/;
+		var regYear = /^2020|2021|2022|2023|2024|2025|2026|2027|2028|2029|2030|2031|2032|2033$/;
 		var tmpYear = $("#year").val().trim();
 		if (!$.isNumeric(tmpYear))
 		{
